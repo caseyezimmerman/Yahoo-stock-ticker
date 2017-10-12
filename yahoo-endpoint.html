@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<script type="text/javascript">
+
+
+	// 1. URL is an endpoint. yahoo has told us to come here, and follow certain rules, and it will give us data back
+	var url = 'http://query.yahooapis.com/v1/public/yql?q=env%20%27store://datatables.org/alltableswithkeys%27;select%20*%20from%20yahoo.finance.quotes%20where%20symbol%20in%20(%22goog%22)%0A%09%09&env=http%3A%2F%2Fdatatables.org%2Falltables.env&format=json';
+
+	$.AJAX, $.getJSON
+	//these are using the xmlhttpobject to go fetch data and bring it back
+	console.log("Issuing an AJAX request")
+	// getJSON takes 2 args.
+	// 1. The where URL
+	// 2. Code to run when JS is back from the request
+	// 2b. The function to run when JS is back will have 1 arg.
+	 // it will be what JS found at that URL
+	$.getJSON(url,function(data){
+		console.log(data);
+	})
+	console.log("Ajax request sent")
+
+</script>
+
+
+
+</head>
+<body>
+
+</body>
+</html>

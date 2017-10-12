@@ -1,0 +1,18 @@
+body{
+	/* background: url("stock-background.jpg")center; */
+}
+
+
+#submit-button{
+	margin-bottom: 20px;
+}
+
+#stock-table{
+	/* background-color: slategrey; */
+	/* color: white; */
+}
+
+td{
+	color: black;
+}
+
